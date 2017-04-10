@@ -23,9 +23,9 @@ npm install kerberos-agent --save-dev
 > This module uses the [Kerberos](https://www.npmjs.com/package/kerberos) package and so you must be able in build a C++ package to install. See the the Kerberos package [README](https://www.npmjs.com/package/kerberos) if you have issues
 
 ## Options
+TODO
 
-
-## Know Limitations
+## Known Limitations
 * No Connection Pooling supported
 * No HTTP Keep Alive supported
 * Authorization header is always sent, i.e. No Challenge/Response
