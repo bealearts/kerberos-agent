@@ -12,10 +12,9 @@ platform:
 shallow_clone: true
 
 install:
-  - ps: |
-      Install-windowsfeature -name AD-Domain-Services
-      $password = ConvertTo-SecureString -String "YX6oio7nHH+a)X1" -AsPlainText -Force
-      Install-ADDSForest –DomainName mycompany.local -SafeModeAdministratorPassword $password
+  - ps: "Install-windowsfeature -name AD-Domain-Services
+         $password = ConvertTo-SecureString -String \"YX6oio7nHH+a)X1\" -AsPlainText -Force
+         Install-ADDSForest –DomainName mycompany.local -SafeModeAdministratorPassword $password"
 
 build_script:
   - ps: Install-Product node $env:nodejs_version $env:platform
