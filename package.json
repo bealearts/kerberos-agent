@@ -1,6 +1,6 @@
 {
   "name": "kerberos-agent",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "HTTP.Agent implementation which provides Kerberos authentication",
   "main": "dist/kerberosAgent.js",
   "dependencies": {
