@@ -5,7 +5,7 @@
   "main": "dist/kerberosAgent.js",
   "dependencies": {
     "agent-base": "^2.0.1",
-    "kerberos": "0.0.23",
+    "kerberos": "0.0.23"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
