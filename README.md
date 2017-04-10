@@ -1,4 +1,4 @@
-# kerberos-agent [![npm version](https://badge.fury.io/js/kerberos-agent.svg)](http://badge.fury.io/js/kerberos-agent)
+# kerberos-agent [![Build status](https://ci.appveyor.com/api/projects/status/5ltwkg215ojvomxq?svg=true)](https://ci.appveyor.com/project/DavidBeale/kerberos-agent) [![npm version](https://badge.fury.io/js/kerberos-agent.svg)](http://badge.fury.io/js/kerberos-agent)
 
 HTTP.Agent implementation which provides Kerberos authentication
 
