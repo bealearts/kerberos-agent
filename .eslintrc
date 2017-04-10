@@ -12,6 +12,7 @@
         "no-prototype-builtins": ["off"],
         "no-underscore-dangle": ["off"],
         "class-methods-use-this": ["off"],
-        "import/no-dynamic-require": ["off"]
+        "import/no-dynamic-require": ["off"],
+        "consistent-return": ["off"]
     }
 }

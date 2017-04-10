@@ -6,7 +6,8 @@
   "dependencies": {
     "agent-base": "^2.0.1",
     "app-root-dir": "^1.0.2",
-    "kerberos": "0.0.23"
+    "kerberos": "0.0.23",
+    "node-sspi": "^0.1.14"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

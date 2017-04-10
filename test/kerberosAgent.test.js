@@ -21,7 +21,7 @@ describe('kerberos-agent', () => {
         })
             .then((response) => {
                 if (response.status !== 200) {
-                    throw new Error(response.statusText);
+                    throw new Error(`${response.status} ${response.statusText}`);
                 }
             })
     );
@@ -32,7 +32,7 @@ describe('kerberos-agent', () => {
         })
             .then((response) => {
                 if (response.status !== 200) {
-                    throw new Error(response.statusText);
+                    throw new Error(`${response.status} ${response.statusText}`);
                 }
             })
     );
