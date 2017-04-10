@@ -5,9 +5,7 @@
   "main": "dist/kerberosAgent.js",
   "dependencies": {
     "agent-base": "^2.0.1",
-    "app-root-dir": "^1.0.2",
     "kerberos": "0.0.23",
-    "node-sspi": "^0.1.14"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
@@ -21,7 +19,8 @@
     "eslint-plugin-import": "^2.2.0",
     "express": "^4.15.2",
     "mocha": "^3.2.0",
-    "node-fetch": "^1.6.3"
+    "node-fetch": "^1.6.3",
+    "node-sspi": "^0.1.14"
   },
   "scripts": {
     "lint": "eslint src/",
@@ -36,9 +35,11 @@
   "keywords": [
     "Kerberos",
     "HTTP Agent",
-    "authentication",
-    "SSIP",
-    "SSO"
+    "Authentication",
+    "SSPI",
+    "SSO",
+    "Windows",
+    "Windows authentication"
   ],
   "author": {
     "name": "David Beale",
