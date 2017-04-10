@@ -1,5 +1,6 @@
 init:
   - git config --global core.autocrlf true
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 environment:
   matrix:
@@ -12,6 +13,11 @@ platform:
 shallow_clone: true
 
 install:
+  - ps: |
+      Install-windowsfeature -name AD-Domain-Services
+      Install-ADDSForest –DomainName mycompany.local
+
+build_script:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - npm install
 
@@ -21,9 +27,4 @@ test_script:
   - node -e "console.log(process.arch);"
   - npm test
 
-build: off
-test: off
 deploy: off
-
-on_finish:
-  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
