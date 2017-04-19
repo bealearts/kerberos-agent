@@ -1,12 +1,12 @@
 
-express = require( 'express');
-NodeSSPI = require ( 'node-sspi');
+const express = require( 'express');
+const NodeSSPI = require ( 'node-sspi');
 
 const sspi = new NodeSSPI({
     sspiPackagesUsed: ['Negotiate']
 });
 
-endPoint = function mockEndPoint() {
+function endPoint() {
     const app = express();
 
     app.get('/', (req, res) => res.send('Hi'));
